@@ -101,7 +101,9 @@ def anonymize_folder(foldername,output_foldername,new_person_name="anonymous",re
 				anonymize(os.path.join(_foldername, filename), os.path.join(_output_foldername, filename_out),_new_person_name)
 				print "done\r",
 
+	# Anonymize all files in current folder
 	_anonymize_folder(foldername,output_foldername,new_person_name,remove_private_tags)
+	# Go through all subfolders - anonymize each of them
 	for root, dirs, files in os.walk(foldername):
 		for subfolder in dirs:
 			to_folder = os.path.join(root,subfolder).replace(foldername,output_foldername)
