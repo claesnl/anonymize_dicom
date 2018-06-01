@@ -1,6 +1,6 @@
 # anonymize_dicom
 
-Anonymize script for DICOM file or folder containing dicom files
+Anonymize script for DICOM file or folder containing dicom files.
 Simply removes or replaces patient sensitive information.
 
 ## Authors
