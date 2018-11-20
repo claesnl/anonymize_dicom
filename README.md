@@ -8,7 +8,7 @@ Simply removes or replaces patient sensitive information.
 Rigshospitalet
   - Claes Ladefoged <claes.noehr.ladefoged@regionh.dk>
 
-## Installation (under /opt/bin/rtx2mnc_py):
+## Installation (under /opt/bin/anonymize_dicom):
 ```
 git clone https://github.com/claesnl/anonymize_dicom.git
 ln -s $HOME/anonymize_dicom/anonymize_dicom.py /opt/bin/anonymize_dicom
@@ -16,7 +16,7 @@ ln -s $HOME/anonymize_dicom/anonymize_dicom.py /opt/bin/anonymize_dicom
 
 ## Usage:
 ```
-usage: anonymize_dicom.py [-h] [--name NAME] original output
+usage: anonymize_dicom [-h] [--name NAME] original output
 
 Convert DICOM to MINC
 
