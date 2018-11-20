@@ -86,7 +86,7 @@ def anonymize_folder(foldername,output_foldername,new_person_name="anonymous",re
 	def _anonymize_folder(_foldername,_output_foldername,_new_person_name,_remove_private_tags):
 		if os.path.exists(_output_foldername):
 			if not os.path.isdir(_output_foldername):
-				raise IOError, "Input is directory; output name exists but is not a directory"
+				raise IOError("Input is directory; output name exists but is not a directory")
 		else: # out_dir does not exist; create it.
 			os.makedirs(_output_foldername)
 
@@ -99,7 +99,7 @@ def anonymize_folder(foldername,output_foldername,new_person_name="anonymous",re
 			if not os.path.isdir(os.path.join(_foldername, filename)):
 				#print filename + " -> " + filename_out + "...",
 				anonymize(os.path.join(_foldername, filename), os.path.join(_output_foldername, filename_out),_new_person_name)
-				print "done\r",
+				print("done\r")
 
 	# Anonymize all files in current folder
 	_anonymize_folder(foldername,output_foldername,new_person_name,remove_private_tags)
