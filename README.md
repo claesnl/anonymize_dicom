@@ -41,3 +41,4 @@ pip install dicom
 
 # Version changes:
 - 1.0.0 :: 2018-06-01 :: Added basic functionality working for one or more dicom-files
+- 1.0.1 :: 2018-11-20 :: Added functionality to python3
